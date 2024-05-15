@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-size: 98%;
+}
+
+body{
+    background: url('imgs\\bg.png') no-repeat;
+    height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.container-img{
+    background: url('imgs\\bg.png') no-repeat;
+    background-size: cover;
+}
+
+.from-down-to-top{
+    animation: from-down-to-top .2s ease-in forwards;
+}
+
+textarea{
+    resize: none;
+}
+textarea::-webkit-scrollbar{
+    background: transparent;
+}
+
+table{
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-clear-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.no-spinners {
+    padding-right: 1px;
+}
+
+*::-webkit-scrollbar{
+    background: #e5e7eb;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #898a8d;
+}
+
+@keyframes from-down-to-top {
+    0%{
+        transform: translateY(70px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
