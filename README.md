@@ -1,5 +1,5 @@
 
-# About The Poroject
+# About The Project
 
 Welcome to the Online Quiz Maker project! This application allows users to create, and take quizzes online. this platform provides a user-friendly interface for quiz creation and administration.
 
