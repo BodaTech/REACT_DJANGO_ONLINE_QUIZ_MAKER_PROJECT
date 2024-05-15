@@ -12,6 +12,8 @@ import Loading from "../../components/Loading"
 import useAxiosPrivate from "../../hooks/useAxiosPrivate"
 import { FaCopy, FaCheckDouble } from "react-icons/fa"
 import Input from "../../components/ui/Input"
+import { useNavigate } from "react-router-dom"
+import { ROUTES } from "../../routes/routes"
 
 const Create = () => {
 
@@ -19,6 +21,7 @@ const Create = () => {
     const [code, setCode] = useState<string>()
     const [isCopied, setIsCopied] = useState(false)
     const privateInstance = useAxiosPrivate()
+    const navigate = useNavigate()
 
     const{ 
         title,
@@ -113,7 +116,7 @@ const Create = () => {
                         <Button 
                             priority="primary"
                             text={"Dashboard"}
-                            action={() => {}}
+                            action={() => {navigate(ROUTES.DASHBOARD)}}
                             classList="w-full"
                             type="button"
                         />

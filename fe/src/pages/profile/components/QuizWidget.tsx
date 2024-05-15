@@ -44,7 +44,10 @@ const QuizWidget: React.FC<{
             <div
                 className="absolute bg-red-400 p-1
                 rounded-full -top-2 -right-2 hidden group-hover:block" 
-                onClick={deleteQuiz}
+                onClick={(event) => {
+                    event.stopPropagation()
+                    deleteQuiz()
+                }}
             >
                 <FaMinus 
                     className="text-white text-xs"
